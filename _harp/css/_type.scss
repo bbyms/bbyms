@@ -1,0 +1,33 @@
+%type--headers {
+  font-family: 'Montserrat', sans-serif;
+}
+
+%type--body {
+  font-family: 'Droid Serif', sans-serif;
+}
+
+body {
+  @extend %type--body;
+}
+
+h1, h2, h3, a {
+  @extend %type--headers;
+  color: $accent;
+}
+
+a {
+  transition-duration: .25s;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+
+  &:hover {
+    color: $accent;
+  }
+
+  &.more-link {
+    border-bottom: none;
+    margin-top: .5em;
+    text-align: right;
+    color: $accent--lighter;
+  }
+}

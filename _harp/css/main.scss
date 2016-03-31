@@ -1,0 +1,15 @@
+// setup
+@import 'reset';
+@import 'color';
+@import 'type';
+@import 'body';
+@import 'layout';
+
+// regions
+@import 'header';
+@import 'home';
+@import 'footer';
+
+//pages
+@import 'about';
+@import 'error';
