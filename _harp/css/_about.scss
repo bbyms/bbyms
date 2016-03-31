@@ -1,6 +1,10 @@
 .about__intro {
   max-width: 32rem;
   padding: 2.5%;
+
+  a {
+    @extend %type--body;
+  }
 }
 
 .about__main-desc {

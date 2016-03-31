@@ -13,6 +13,7 @@ body {
 h1, h2, h3, a {
   @extend %type--headers;
   color: $accent;
+  font-weight: 700;
 }
 
 a {
