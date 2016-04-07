@@ -3,7 +3,7 @@
 }
 
 %type--body {
-  font-family: 'Droid Serif', sans-serif;
+  font-family: 'Merriweather', sans-serif;
 }
 
 body {
@@ -17,9 +17,9 @@ h1, h2, h3, a {
 }
 
 a {
+  @extend %type--headers;
   transition-duration: .25s;
   text-decoration: none;
-  border-bottom: 1px solid currentColor;
 
   &:hover {
     color: $accent;
