@@ -32,15 +32,12 @@
 }
 
 .table-of-contents--items {
-  // column-count: 4;
-  // column-gap: 100px;
+  column-count: 4;
+  column-gap: 100px;
 
   div {
     break-inside: avoid;
-    float: left;
     padding-bottom: 30px;
-    padding-right: 100px;
-    width: 25%;
 
     &:nth-child(4n) {
       &::after {
@@ -65,4 +62,5 @@
   .red {
     color: $red;
   }
+
 }
