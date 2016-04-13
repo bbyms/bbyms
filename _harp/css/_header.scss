@@ -1,11 +1,12 @@
-.header__container {
-  padding: 1rem;
+.header-container {
+  background: $lightgrey;
+  padding: 2.5%;
 }
 
-.header__title {
-  font-size: 1.6rem;
-  line-height: 2.5rem;
+.header-title {
+  font-size: 1.2rem;
   font-weight: 700;
+  line-height: 2.5rem;
   margin-right: 20px;
 }
 
