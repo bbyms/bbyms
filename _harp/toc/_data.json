@@ -1,0 +1,42 @@
+{
+  "4": {
+    "title": "4",
+    "description": "Editor's note",
+    "byline": "-- Lorem ipsum"
+  },
+  "32": {
+    "title": "32",
+    "description": "Lorem ipsum",
+    "byline": "Observed"
+  },
+  "64": {
+    "title": "64",
+    "description": "Editor's note",
+    "byline": "-- Digilantes"
+  },
+  "78": {
+    "title": "32",
+    "description": "Step out of line, and it might soon be known online",
+    "byline": "-- Artisanal Arms"
+  },
+  "06": {
+    "title": "06",
+    "description": "From the Makery",
+    "byline": "-- Lorem Ipsum"
+  },
+  "89": {
+    "title": "32",
+    "description": "Lorem ipsum",
+    "byline": "Observed"
+  },
+  "90": {
+    "title": "64",
+    "description": "Editor's note",
+    "byline": "-- Digilantes"
+  },
+  "91": {
+    "title": "32",
+    "description": "Step out of line, and it might soon be known online",
+    "byline": "-- Artisanal Arms"
+  }
+}

@@ -3,7 +3,9 @@ $grey: #e6e6e6;
 $blue: #05d;
 $black: #222;
 $dimgrey: #737373;
+$red: #ff3b3a;
+$grey: #333;
 
 $accent: $blue;
-$accent--lighter:  mix(lemonchiffon, $accent, 30%);
+$accent--lighter:  mix($dimgrey, $accent, 30%);
 $body: #222;
