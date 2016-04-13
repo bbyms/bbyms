@@ -37,6 +37,7 @@
 
   div {
     break-inside: avoid;
+    min-height: 165px;
     padding-bottom: 30px;
 
     &:nth-child(4n) {
