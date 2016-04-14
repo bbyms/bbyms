@@ -27,12 +27,6 @@
     break-inside: avoid;
     min-height: 165px;
     padding-bottom: 30px;
-
-    &:nth-child(4n) {
-      &::after {
-        clear: both;
-      }
-    }
   }
 
   h2 {
@@ -52,4 +46,11 @@
     color: $red;
   }
 
+}
+
+@media screen and (max-width: 750px) {
+  .table-of-contents--items {
+    column-count: 2;
+    column-gap: 20px;
+  }
 }
