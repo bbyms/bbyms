@@ -1,25 +1,34 @@
-%type--headers {
-  font-family: 'freight-text-pro', sans-serif;
+%type--serif {
+  font-family: 'ff-tisa-web-pro', sans-serif;
 }
 
-%type--body {
-  font-family: 'Merriweather', sans-serif;
+%type--sans {
+  font-family: 'ff-basic-gothic-web-pro', sans-serif;
 }
+
+%type--slab {
+  font-family: 'raleway', sans-serif;
+}
+
+%type--numbers {
+  font-family: 'ff-spinoza-web-pro', serif;
+}
+
 
 body {
-  @extend %type--body;
+  @extend %type--sans;
 }
 
 h1,
 h2,
 h3 {
-  @extend %type--headers;
+  @extend %type--serif;
   color: $black;
   font-weight: 700;
 }
 
 a {
-  @extend %type--body;
+  @extend %type--sans;
   color: $blue;
   text-decoration: none;
   transition-duration: .25s;
