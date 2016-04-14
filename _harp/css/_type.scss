@@ -3,17 +3,16 @@
 }
 
 %type--sans {
-  font-family: 'ff-basic-gothic-web-pro', sans-serif;
-}
-
-%type--slab {
-  font-family: 'raleway', sans-serif;
+  font-family: 'proxima-nova', sans-serif;
 }
 
 %type--numbers {
   font-family: 'ff-spinoza-web-pro', serif;
 }
 
+%type--condensed {
+  font-family: 'franklin-gothic-urw-comp', sans-serif;
+}
 
 body {
   @extend %type--sans;

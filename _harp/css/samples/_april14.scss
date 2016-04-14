@@ -2,10 +2,11 @@
   display: flex;
 
   .april14-aside {
-    @extend %type--slab;
+    @extend %type--sans;
     flex-basis: 20%;
     flex-grow: 1;
     font-size: .8rem;
+    font-weight: 700;
     line-height: 1.5;
     padding-bottom: 30px;
     padding-right: 100px;
@@ -18,7 +19,7 @@
   }
 
   .april14-headline {
-    @extend %type--slab;
+    @extend %type--sans;
     display: block;
     font-size: 2rem;
     font-weight: 700;
@@ -29,7 +30,7 @@
   }
 
   @media screen and (max-width: 750px) {
-  display: block;
+    display: block;
 
     .april14-headline {
       margin-left: auto;
