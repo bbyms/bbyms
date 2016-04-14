@@ -26,4 +26,12 @@
     padding: 30px 0;
     text-transform: uppercase;
   }
+
+  @media screen and (max-width: 750px) {
+    flex-direction: column;
+
+    .april14-headline {
+      margin-left: auto;
+    }
+  }
 }
