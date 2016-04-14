@@ -23,17 +23,21 @@
   }
 
   .april15-main-article {
-    column-count: 2;
+    column-count: 1;
     column-gap: 50px;
     margin-top: 50px;
+
+    @include desktop {
+      column-count: 2;
+    }
 
     p {
       line-height: 1.5;
       margin-bottom: 20px;
+    }
 
-      &:last-of-type {
-        margin-bottom: 100px;
-      }
+    q:first-of-type {
+      margin-top: 100px;
     }
 
     q,
@@ -42,14 +46,12 @@
       font-weight: 700;
       line-height: 1.5;
       margin-bottom: 30px;
-      padding-left: 30px;
     }
-  }
-}
 
-@media screen and (max-width: 750px) {
-
-  .april15 {
-    column-count: 1;
+    i {
+      @include desktop {
+        padding-left: 30px;
+      }
+    }
   }
 }

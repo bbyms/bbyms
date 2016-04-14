@@ -20,8 +20,13 @@
 }
 
 .table-of-contents--items {
-  column-count: 4;
-  column-gap: 100px;
+  column-count: 2;
+  column-gap: 20px;
+
+  @include desktop {
+    column-count: 4;
+    column-gap: 100px;
+  }
 
   div {
     break-inside: avoid;
@@ -46,11 +51,4 @@
     color: $red;
   }
 
-}
-
-@media screen and (max-width: 750px) {
-  .table-of-contents--items {
-    column-count: 2;
-    column-gap: 20px;
-  }
 }
