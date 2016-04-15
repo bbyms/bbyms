@@ -46,10 +46,7 @@
       font-weight: 700;
       line-height: 1.5;
       margin-bottom: 30px;
-    }
 
-    q,
-    i {
       @include desktop {
         padding-left: 30px;
       }
