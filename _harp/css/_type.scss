@@ -28,12 +28,12 @@ h3 {
 
 a {
   @extend %type--sans;
-  color: $blue;
+  color: $red;
   text-decoration: none;
   transition-duration: .25s;
 
   &:hover {
-    color: $accent;
+    color: darken($red, 10%);
   }
 
   &.more-link {
