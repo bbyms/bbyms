@@ -8,5 +8,15 @@
     "title": "2",
     "description": "A few miles south of Soledad",
     "byline": "-- April 15th 2016"
+  },
+  "april16": {
+    "title": "3",
+    "description": "Great Chicago glowed red before our eyes.",
+    "byline": "-- April 16th 2016"
+  },
+  "april17": {
+    "title": "4",
+    "description": "Once California belonged to Mexico",
+    "byline": "-- April 17th 2016"
   }
 }

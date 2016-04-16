@@ -1,0 +1,57 @@
+.april17 {
+  h1,
+  h2 {
+    @extend %type--condensed;
+    font-weight: 400;
+    letter-spacing: 1.5;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+    padding-top: 50px;
+  }
+
+  h2 {
+    color: $dimgrey;
+    font-size: 1.2rem;
+  }
+
+  .april17-pone {
+    @extend %type--serif;
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 40px;
+    margin-top: 50px;
+    width: 50%;
+
+    &::first-letter {
+      float: left;
+      font-size: 7rem;
+      font-weight: 700;
+      margin-bottom: -40px;
+      margin-right: 10px;
+      margin-top: -45px;
+      text-transform: uppercase;
+    }
+  }
+
+  .april17-ptwo {
+    @extend %type--serif;
+    margin-top: 50px;
+    shape-margin: 40px;
+    shape-outside: border-box;
+  }
+
+  .april17-words {
+    letter-spacing: 2;
+    margin-top: 20%;
+    text-align: center;
+    text-transform: uppercase;
+
+    .dim {
+      color: $dimgrey;
+    }
+  }
+
+}

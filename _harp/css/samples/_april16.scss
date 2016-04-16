@@ -1,0 +1,26 @@
+.april16 {
+  background-blend-mode: screen;
+  background-color: $dimgrey;
+  background-image: url('../img/sketching.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  padding: 2.5%;
+
+  q {
+    @extend %type--serif;
+    flex-basis: 50%;
+    flex-grow: 3;
+    font-size: 1.5rem;
+    padding-right: 100px;
+  }
+
+  .april16-main-article {
+    flex-basis: 50%;
+    flex-grow: 3;
+
+    p {
+      padding-bottom: 30px;
+    }
+  }
+}
