@@ -19,11 +19,14 @@
 
   .april17-pone {
     @extend %type--serif;
-    float: left;
     margin-bottom: 20px;
     margin-right: 40px;
     margin-top: 50px;
-    width: 50%;
+
+    @include desktop {
+      float: left;
+      width: 50%;
+    }
 
     &::first-letter {
       float: left;
@@ -39,8 +42,11 @@
   .april17-ptwo {
     @extend %type--serif;
     margin-top: 50px;
-    shape-margin: 40px;
-    shape-outside: border-box;
+
+    @include desktop {
+      shape-margin: 40px;
+      shape-outside: border-box;
+    }
   }
 
   .april17-words {
