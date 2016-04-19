@@ -17,7 +17,25 @@
     font-size: 1.2rem;
   }
 
-  .april17-container {
+  .april17-words {
+    letter-spacing: 2;
+    margin-top: 20%;
+    text-align: center;
+    text-transform: uppercase;
+
+    @include desktop {
+      clear: both;
+    }
+
+    .dim {
+      color: $dimgrey;
+    }
+  }
+}
+
+.april17-container {
+
+  @include desktop {
     margin: auto;
     position: relative;
     width: 50em;
@@ -35,28 +53,34 @@
       shape-outside: border-box;
       width: 100px;
     }
+  }
 
-    .april17-pone {
-      @extend %type--serif;
-      margin-top: 50px;
+  .april17-pone {
+    @extend %type--serif;
+    margin-top: 50px;
+
+    @include desktop {
       margin-left: 60px;
       text-align: justify;
       width: 25em;
+    }
 
-      &::first-letter {
-        float: left;
-        font-size: 7rem;
-        font-weight: 700;
-        margin-bottom: -40px;
-        margin-right: 10px;
-        margin-top: -45px;
-        text-transform: uppercase;
-      }
-   }
+    &::first-letter {
+      float: left;
+      font-size: 7rem;
+      font-weight: 700;
+      margin-bottom: -40px;
+      margin-right: 10px;
+      margin-top: -45px;
+      text-transform: uppercase;
+    }
+ }
 
-    .april17-ptwo {
-      @extend %type--serif;
-      margin-top: 50px;
+  .april17-ptwo {
+    @extend %type--serif;
+    margin-top: 50px;
+
+    @include desktop {
       position: absolute;
       right: 0;
       text-align: justify;
@@ -64,17 +88,4 @@
       width: 25em;
     }
   }
-
-  .april17-words {
-    clear: both;
-    letter-spacing: 2;
-    margin-top: 20%;
-    text-align: center;
-    text-transform: uppercase;
-
-    .dim {
-      color: $dimgrey;
-    }
-  }
-
 }
