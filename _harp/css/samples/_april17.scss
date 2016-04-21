@@ -17,18 +17,13 @@
     font-size: 1.2rem;
   }
 
-  .april17-words {
+  .words {
     letter-spacing: 2;
     margin-top: 20%;
     text-align: center;
-    text-transform: uppercase;
 
     @include desktop {
       clear: both;
-    }
-
-    .dim {
-      color: $dimgrey;
     }
   }
 }

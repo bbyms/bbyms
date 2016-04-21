@@ -6,9 +6,6 @@ main {
   padding: 2.5%;
 
   a {
-    @extend %type--serif;
-    color: $red;
-    font-size: 2rem;
-    font-weight: 700;
+    color: $dimgrey;
   }
 }

@@ -43,3 +43,11 @@ a {
     text-align: right;
   }
 }
+
+.words {
+  text-transform: uppercase;
+
+  .dim {
+    color: $dimgrey;
+  }
+}

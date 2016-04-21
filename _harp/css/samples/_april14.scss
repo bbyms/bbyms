@@ -18,6 +18,10 @@
     @extend %type--serif;
     flex-basis: 70%;
     flex-grow: 2;
+
+    .words {
+      margin-top: 30px;
+    }
   }
 
   .april14-headline {
