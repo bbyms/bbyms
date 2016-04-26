@@ -1,18 +1,25 @@
 .april16 {
   background-blend-mode: screen;
   background-color: $dimgrey;
-  background-image: url('../img/sketching.jpg');
+  background-image: url('../img/girl03.jpg');
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  display: flex;
   padding: 2.5%;
+
+  @include desktop {
+    main {
+      display: flex;
+    }
+  }
 
   q {
     @extend %type--serif;
     flex-basis: 50%;
     flex-grow: 3;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-right: 100px;
+    text-align: center;
   }
 
   .april16-main-article {
@@ -20,6 +27,8 @@
     flex-grow: 3;
 
     p {
+      font-weight: 600;
+      line-height: 1.5;
       padding-bottom: 30px;
     }
   }

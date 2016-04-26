@@ -4,14 +4,8 @@
     <title>Barbara Mendes</title>
     <meta name="description" content="" />
     <%- partial("../_partials/_head") %>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
-  <body class="samples">
-    <header class="back">
-      <a href="/">Home</a>
-    </header>
-    <main>
-      <%- yield %>
-    </main>
-    <%- partial("../_partials/_footer") %>
-  </body>
+  <%- yield %>
 </html>

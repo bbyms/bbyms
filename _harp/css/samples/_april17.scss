@@ -17,15 +17,47 @@
     font-size: 1.2rem;
   }
 
+  .words {
+    letter-spacing: 2;
+    margin-top: 20%;
+    text-align: center;
+
+    @include desktop {
+      clear: both;
+    }
+  }
+}
+
+.april17-container {
+
+  @include desktop {
+    margin: auto;
+    position: relative;
+    width: 50em;
+
+    &::after {
+      clear: both;
+    }
+
+    .shape {
+      float: right;
+      height: 300px;
+      margin-right: 340px;
+      margin-top: 186px;
+      shape-margin: 30px;
+      shape-outside: border-box;
+      width: 100px;
+    }
+  }
+
   .april17-pone {
     @extend %type--serif;
-    margin-bottom: 20px;
-    margin-right: 40px;
     margin-top: 50px;
 
     @include desktop {
-      float: left;
-      width: 50%;
+      margin-left: 60px;
+      text-align: justify;
+      width: 25em;
     }
 
     &::first-letter {
@@ -37,27 +69,18 @@
       margin-top: -45px;
       text-transform: uppercase;
     }
-  }
+ }
 
   .april17-ptwo {
     @extend %type--serif;
     margin-top: 50px;
 
     @include desktop {
-      shape-margin: 40px;
-      shape-outside: border-box;
+      position: absolute;
+      right: 0;
+      text-align: justify;
+      top: 130px;
+      width: 25em;
     }
   }
-
-  .april17-words {
-    letter-spacing: 2;
-    margin-top: 20%;
-    text-align: center;
-    text-transform: uppercase;
-
-    .dim {
-      color: $dimgrey;
-    }
-  }
-
 }
