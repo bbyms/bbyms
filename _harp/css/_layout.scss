@@ -4,6 +4,8 @@ main {
 
 .back {
   padding: 2.5%;
+  position: relative;
+  z-index: 3;
 
   a {
     color: $dimgrey;
