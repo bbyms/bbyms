@@ -1,13 +1,16 @@
 {
   "name": "barbara",
   "version": "1.0.0",
-  "description": "Barbara Mendes website",
+  "description": "CSS playground",
   "main": "gulpfile.js",
   "scripts": {
     "harp": "./node_modules/.bin/harp",
     "serve": "./node_modules/.bin/harp server _harp",
     "deploy": "./node_modules/.bin/harp compile _harp --output ../www && ./node_modules/.bin/gh-pages -d www",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "harp": "^0.18.0"
   },
   "devDependencies": {
     "browser-sync": "^2.6.4",
@@ -18,18 +21,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bbyms/bbyms.github.io"
+    "url": "https://github.com/bbyms/bbyms"
   },
   "keywords": [
     "front-end",
     "web",
-    "css shapes",
-    "layout",
     "css"
   ],
   "author": "Barbara Mendes",
-  "license": "CC-BY-NC-SA 4.0",
+  "license": "MIT License",
   "bugs": {
-    "url": "https://github.com/bbyms/bbyms.github.io/issues"
+    "url": "https://github.com/bbyms/bbyms/issues"
   }
 }
