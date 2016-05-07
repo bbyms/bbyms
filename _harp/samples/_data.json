@@ -23,5 +23,10 @@
     "title": "5",
     "description": "The moon was on the cover of Life magazine",
     "byline": "-- May 2nd 2016"
+  },
+  "may7": {
+    "title": "6",
+    "description": "In the Cordova Hotel, near the docks of Barcelona",
+    "byline": "-- May 7th 2016"
   }
 }
