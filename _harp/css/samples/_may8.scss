@@ -1,5 +1,9 @@
 .may8 {
+  // .post-header {
+  //   background-image: filter(url(data:image/jpeg;base64,/9j/4AAQ ...[truncated] ...), blur(20px));
+  // }
   header {
+    background-color: #57434c;
     background-image: url('../img/skater.jpeg');
     background-size: cover;
     height: 100vh;
@@ -9,10 +13,10 @@
       position: absolute;
       right: 60px;
       width: 20rem;
+    }
 
-      a {
-        color: $white;
-      }
+    a {
+      color: $white;
     }
 
     h1,
@@ -51,7 +55,7 @@
       line-height: .8;
       text-transform: uppercase;
 
-      span {
+      .ident {
         display: block;
         font-style: italic;
         text-indent: 100px;
