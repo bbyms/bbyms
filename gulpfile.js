@@ -8,7 +8,7 @@ gulp.task('harp-server', function () {
         port: 4000
     }, function () {
         browserSync({
-            proxy: "localhost:4000",
+            proxy: "http://localhost:4000",
             open: false
         });
 
