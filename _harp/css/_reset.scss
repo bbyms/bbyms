@@ -1,17 +1,29 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 
-html, body, header, nav, div, section, h1, h2, p, h3, h4, h5, ol, aside {
+html,
+body,
+header,
+nav,
+div,
+section,
+ol,
+aside,
+h1,
+h2 {
   display: block;
   margin: 0;
   padding: 0;
   text-decoration: none;
 }
 
-ul, ol {
-  padding: 0;
+ul,
+ol {
   margin: 0;
+  padding: 0;
 }
 
 svg {
