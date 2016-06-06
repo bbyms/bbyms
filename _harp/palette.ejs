@@ -23,25 +23,29 @@
 
 <script>
 
-var colorThief = new ColorThief();
+  var colorThief = new ColorThief();
 
-var image = $("img.image")[0];
+  var image = $("img.image")[0];
 
-image.crossOrigin = 'anonymous';
+  function getRandomImage() {
+    var images = ["img1.jpeg","img2.jpeg","img3.jpeg"];
+    return images[Math.floor(Math.random() * images.length)];
+  }
 
-$(image).load(function(data) {
+  $(".image").attr('src', '/img/palette/' + getRandomImage());
 
+  $(image).load(function(data) {
 
-  var color = colorThief.getPalette(image, 2);
+    var color = colorThief.getPalette(image, 2);
 
-  var color1 = 'rgb(' + color[0] + ')';
-  var color2 = 'rgb(' + color[1] + ')';
+    var color1 = 'rgb(' + color[0] + ')';
+    var color2 = 'rgb(' + color[1] + ')';
 
-  $('.main').css('background', 'linear-gradient(to right,' + color1 + ',' + color2 + ')');
+    $('.main').css('background', 'linear-gradient(to right,' + color1 + ',' + color2 + ')');
 
-  $('a').css('color', color1);
+    $('a').css('color', color1);
 
-});
+  });
 
 
 </script>

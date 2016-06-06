@@ -13,6 +13,10 @@ a {
   	display: flex;
   	margin: 30px auto;
   	width: 960px;
+
+    .img-container {
+      width: 40%;
+    }
   }
  
   
@@ -24,25 +28,18 @@ a {
   text-align: center;
 }
 
-.img-container {
-	width: 40%;
-}
+
 
 .image {
   display: block;
   height: 270px;
   object-fit: cover;
   width: 100%;
-
-  @include desktop {
-  	width: 100%;
-  }
 }
 
 .content {
   box-sizing: border-box;
   color: $white;
-  width: 60%;
   font-weight: 400;
   line-height: 1.5;
   padding: 0 30px 30px 30px;
@@ -50,6 +47,7 @@ a {
 
   @include desktop {
   	padding: 0 30px;
+    width: 60%;
   }
 
   h1 {
