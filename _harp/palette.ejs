@@ -1,4 +1,3 @@
-<link href="/css/palette.css" rel="stylesheet">
 <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 <script src="http://lokeshdhakar.com/projects/color-thief/js/color-thief.js"></script>
 
@@ -12,7 +11,7 @@
 
   <div class="main">
     <div class="img-container">
-      <img src="https://source.unsplash.com/random" alt="Example image" class="image" crossorigin="anonymous" />
+      <img src="https://source.unsplash.com/random" alt="Example image" class="image" crossorigin="" />
     </div>
 
     <div class="content">
@@ -21,12 +20,18 @@
   </div>
   </div>
 
+
 <script>
+
 var colorThief = new ColorThief();
 
 var image = $("img.image")[0];
 
-$(image).load(function() {
+image.crossOrigin = 'anonymous';
+
+$(image).load(function(data) {
+
+
   var color = colorThief.getPalette(image, 2);
 
   var color1 = 'rgb(' + color[0] + ')';
@@ -35,7 +40,9 @@ $(image).load(function() {
   $('.main').css('background', 'linear-gradient(to right,' + color1 + ',' + color2 + ')');
 
   $('a').css('color', color1);
+
 });
+
 
 </script>
 

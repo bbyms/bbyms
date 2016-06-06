@@ -1,4 +1,5 @@
 @import 'color';
+@import 'mixins';
 
 a {
   color: $dimgrey;
@@ -7,9 +8,14 @@ a {
 .main {
   box-shadow: 0 0 100px rgba(0, 0, 0, .2);
   box-sizing: border-box;
-  display: flex;
-  margin: 30px auto;
-  width: 960px;
+
+  @include desktop {
+  	display: flex;
+  	margin: 30px auto;
+  	width: 960px;
+  }
+ 
+  
 }
 
 .header {
@@ -18,11 +24,19 @@ a {
   text-align: center;
 }
 
+.image-container {
+	width: 60%;
+}
+
 .image {
   display: block;
   height: 270px;
   object-fit: cover;
-  width: 405px;
+  width: 100%;
+
+  @include desktop {
+  	width: 100%;
+  }
 }
 
 .content {
@@ -31,8 +45,12 @@ a {
   flex-basis: 150%;
   font-weight: 400;
   line-height: 1.5;
-  padding: 0 30px;
+  padding: 0 30px 30px 30px;
   text-align: left;
+
+  @include desktop {
+  	padding: 0 30px;
+  }
 
   h1 {
     color: $white;

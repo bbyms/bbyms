@@ -13,7 +13,7 @@ gulp.task('harp-server', function () {
         });
 
         gulp.watch("_harp/css/**/*.scss", function () {
-            reload("main.css", {stream: true});
+            reload(["main.css", "palette.css"], {stream: true});
         });
 
         gulp.watch([
