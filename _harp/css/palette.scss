@@ -10,22 +10,23 @@ a {
   box-sizing: border-box;
 
   @include desktop {
-  	display: flex;
-  	margin: 30px auto;
-  	width: 960px;
+    display: flex;
+    margin: 30px auto;
+    width: 960px;
   }
- 
-  
+
+
 }
 
 .header {
   box-sizing: border-box;
   color: $dimgrey;
+  padding: 40px;
   text-align: center;
 }
 
 .img-container {
-	width: 40%;
+  width: 40%;
 }
 
 .image {
@@ -35,21 +36,21 @@ a {
   width: 100%;
 
   @include desktop {
-  	width: 100%;
+    width: 100%;
   }
 }
 
 .content {
   box-sizing: border-box;
   color: $white;
-  width: 60%;
   font-weight: 400;
   line-height: 1.5;
-  padding: 0 30px 30px 30px;
+  padding: 0 30px 30px;
   text-align: left;
+  width: 60%;
 
   @include desktop {
-  	padding: 0 30px;
+    padding: 0 30px;
   }
 
   h1 {
