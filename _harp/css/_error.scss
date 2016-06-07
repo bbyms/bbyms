@@ -1,13 +1,13 @@
 .error-page {
-
   h1 {
-    color: $red;
+    color: $primary;
     font-size: 3rem;
     margin-bottom: 30px;
     text-align: center;
   }
 
   p {
+    color: $grey;
     text-align: center;
   }
 }
