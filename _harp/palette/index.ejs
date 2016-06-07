@@ -6,12 +6,12 @@
   <div class="header">
     <h1>Color palette from image </h1>
   <h2> using <a href="http://lokeshdhakar.com/projects/color-thief">color thief</a></h2>
-  <p>Refresh to get a new image</p>
+  <p>Every time you refresh you get a new image</p>
   </div>
 
   <div class="main">
     <div class="img-container">
-      <img src="/img/palette/img1.jpeg" alt="Example image" class="image" />
+      <img src="/img/skater_tiny.jpg" alt="Example image" class="image" crossorigin="" />
     </div>
 
     <div class="content">
@@ -23,29 +23,29 @@
 
 <script>
 
-var colorThief = new ColorThief();
+  var colorThief = new ColorThief();
 
-var image = $("img.image")[0];
+  var image = $("img.image")[0];
 
-function getRandomImage() {
-  var images = ["img1.jpeg","img2.jpeg","img3.jpeg"];
-  return images[Math.floor(Math.random() * images.length)];
-}
+  function getRandomImage() {
+    var images = ["img1.jpeg","img2.jpeg","img3.jpeg"];
+    return images[Math.floor(Math.random() * images.length)];
+  }
 
-$(".image").attr('src', '/img/palette/' + getRandomImage());
+  $(".image").attr('src', '/img/palette/' + getRandomImage());
 
-$(image).load(function(data) {
+  $(image).load(function(data) {
 
-  var color = colorThief.getPalette(image, 2);
+    var color = colorThief.getPalette(image, 2);
 
-  var color1 = 'rgb(' + color[0] + ')';
-  var color2 = 'rgb(' + color[1] + ')';
+    var color1 = 'rgb(' + color[0] + ')';
+    var color2 = 'rgb(' + color[1] + ')';
 
-  $('.main').css('background', 'linear-gradient(to right,' + color1 + ',' + color2 + ')');
+    $('.main').css('background', 'linear-gradient(to right,' + color1 + ',' + color2 + ')');
 
-  $('a').css('color', color1);
+    $('a').css('color', color1);
 
-});
+  });
 
 
 </script>

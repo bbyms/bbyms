@@ -10,34 +10,31 @@ a {
   box-sizing: border-box;
 
   @include desktop {
-    display: flex;
-    margin: 30px auto;
-    width: 960px;
+  	display: flex;
+  	margin: 30px auto;
+  	width: 960px;
+
+    .img-container {
+      width: 40%;
+    }
   }
-
-
+ 
+  
 }
 
 .header {
   box-sizing: border-box;
   color: $dimgrey;
-  padding: 40px;
   text-align: center;
 }
 
-.img-container {
-  width: 40%;
-}
+
 
 .image {
   display: block;
   height: 270px;
   object-fit: cover;
   width: 100%;
-
-  @include desktop {
-    width: 100%;
-  }
 }
 
 .content {
@@ -45,12 +42,12 @@ a {
   color: $white;
   font-weight: 400;
   line-height: 1.5;
-  padding: 0 30px 30px;
+  padding: 0 30px 30px 30px;
   text-align: left;
-  width: 60%;
 
   @include desktop {
-    padding: 0 30px;
+  	padding: 0 30px;
+    width: 60%;
   }
 
   h1 {
