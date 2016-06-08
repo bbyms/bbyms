@@ -1,4 +1,7 @@
 .april14 {
+  box-sizing: border-box;
+  padding: 30px;
+  
   @include desktop {
     display: flex;
   }
