@@ -55,13 +55,15 @@ body {
     }
 
     img {
-      filter: url('#duotone');
       height: 300px;
       object-fit: cover;
       width: 100%;
     }
   }
 
+.svg {
+  color-interpolation-filters: sRGB;
+}
   .title {
     border-bottom: 5px solid $lightgrey;
     color: $primary;

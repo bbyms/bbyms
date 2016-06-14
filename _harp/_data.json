@@ -1,0 +1,13 @@
+{
+    "post-one" : {
+        "title": "magazines",
+        "image": "img/may8.jpg",
+        "colors": [ [255, 192, 79], [246, 22, 157] ]
+    },
+
+    "post-two": {
+        "title": "lemonade",
+        "image": "img/lemonade.png",
+        "colors": [ [122, 255, 98], [107, 17, 202] ]
+    }
+}
