@@ -8,6 +8,14 @@ body {
   padding: 0;
 }
 
+svg {
+  color-interpolation-filters: sRGB;
+}
+
+#snippet {
+
+}
+
 .back {
   padding: 2.5%;
   position: relative;
@@ -61,9 +69,6 @@ body {
     }
   }
 
-.svg {
-  color-interpolation-filters: sRGB;
-}
   .title {
     border-bottom: 5px solid $lightgrey;
     color: $primary;
@@ -81,14 +86,22 @@ body {
     @extend %type--serif;
     color: $grey;
   }
+}
 
-  .snippet {
-    width: 100%;
+main {
+  padding: 40px;
+}
 
-    @include desktop {
-      margin: 0 50px 50px 0;
-      width: 300px;
-    }
+.snippet {
+  width: 100%;
+
+  @include desktop {
+    margin: 0 50px 50px 0;
+    width: 300px;
+  }
+
+  svg {
+    width: 300px;
   }
 }
 

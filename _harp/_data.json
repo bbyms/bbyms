@@ -1,13 +1,17 @@
 {
     "post-one" : {
-        "title": "magazines",
+        "title": "Magazine layouts on the web",
         "image": "img/may8.jpg",
-        "colors": [ [255, 192, 79], [246, 22, 157] ]
+        "colors": [ [255, 192, 79], [246, 22, 157] ],
+        "link": "/magazine",
+        "description": "I collect several magazine layouts and recreate them with css."
     },
 
     "post-two": {
-        "title": "lemonade",
+        "title": "Color palette from image",
         "image": "img/lemonade.png",
-        "colors": [ [122, 255, 98], [107, 17, 202] ]
+        "colors": [ [122, 255, 98], [107, 17, 202] ],
+        "link": "/palette",
+        "description": "Recreating the iTunes library behaviour where  the track list takes a gradient of the album cover as a background."
     }
 }
