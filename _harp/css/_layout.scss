@@ -95,9 +95,24 @@ svg {
     padding: 30px 0;
   }
 
-  #no_connection {
+  #no-connection {
     fill: lighten($dimgrey, 30%);
     margin-bottom: 30px;
     width: 100%;
   }
+}
+
+.palette-box {
+  border-radius: 3px;
+  display: inline-block;
+  height: 32px;
+  margin-right: 5px;
+  vertical-align: middle;
+  width: 32px;
+}
+
+code {
+  background-color: $lightgrey;
+  margin-right: 5px;
+  padding: 10px;
 }
