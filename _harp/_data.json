@@ -15,5 +15,14 @@
     "colors": [ [220, 181, 206], [34, 56, 183] ],
     "link": "/palette",
     "description": "Recreating the iTunes library behaviour where  the track list takes a gradient of the album cover as a background."
+  },
+
+  "post-three": {
+    "slug": "duotone",
+    "title": "Duotone color palette",
+    "image": "img/duo.png",
+    "colors": [ [220, 181, 206], [34, 56, 183] ],
+    "link": "/duo",
+    "description": "A duotone palette inspired from spotify's branding"
   }
 }
