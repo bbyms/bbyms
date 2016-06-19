@@ -23,6 +23,6 @@
     "image": "img/duo.png",
     "colors": [ [220, 181, 206], [34, 56, 183] ],
     "link": "/duo",
-    "description": "A duotone palette inspired from spotify's branding"
+    "description": "A duotone palette inspired by spotify's branding"
   }
 }

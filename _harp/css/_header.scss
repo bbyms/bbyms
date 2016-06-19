@@ -4,7 +4,9 @@
 }
 
 .header-title {
+  align-items: center;
   color: $black;
+  display: flex;
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 2.5rem;
@@ -20,4 +22,9 @@
     list-style: none;
     padding: 1rem;
   }
+}
+
+.logo {
+  margin-right: 20px;
+  width: 64px;
 }
