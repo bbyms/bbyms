@@ -11,6 +11,7 @@ for(var key in public._data){
             <feColorMatrix type="matrix" values="<%=getColorMatrix( public._data[key].colors)%>" />
             </filter>
           </defs>
+          <title><%= public._data[key].alt %></title>
           <image width="100%" height="100%" preserveAspectRatio="xMidYMid slice" filter=url(<%= "#duotone-filter-" +public._data[key].slug %>)  xlink:href=<%= public._data[key].image %> />
       </svg>
       <%= public._data[key].title %>

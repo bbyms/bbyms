@@ -5,7 +5,8 @@
     "image": "img/may8.jpg",
     "colors": [ [220, 181, 206], [34, 56, 183] ],
     "link": "/magazine",
-    "description": "I collect several magazine layouts and recreate them with css."
+    "description": "I collect several magazine layouts and recreate them with css.",
+    "alt": "Magazine spread"
   },
 
   "post-two": {
@@ -14,7 +15,8 @@
     "image": "img/palette/img2.jpeg",
     "colors": [ [220, 181, 206], [34, 56, 183] ],
     "link": "/palette",
-    "description": "Recreating the iTunes library behaviour where  the track list takes a gradient of the album cover as a background."
+    "description": "Recreating the iTunes library behaviour where  the track list takes a gradient of the album cover as a background.",
+    "alt": "A rock on the ocean"
   },
 
   "post-three": {
@@ -23,6 +25,7 @@
     "image": "img/duo.png",
     "colors": [ [220, 181, 206], [34, 56, 183] ],
     "link": "/duo",
-    "description": "A duotone palette inspired by spotify's branding"
+    "description": "A duotone palette inspired by spotify's branding",
+    "alt": "Spotify image of Calvin Harris"
   }
 }
