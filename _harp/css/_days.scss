@@ -34,8 +34,8 @@
       @extend %type--sans;
       border: 4px solid lighten($accent, 20%);
       border-radius: 30px;
-      padding: 10px;
       margin-bottom: 20px;
+      padding: 10px;
       width: 40rem;
 
       &:focus {

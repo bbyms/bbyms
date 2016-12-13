@@ -1,0 +1,14 @@
+@mixin flex-center {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.mercury {
+  @include flex-center;
+  height: 100vh;
+
+  &-title {
+    height: 80vh;
+  }
+}
