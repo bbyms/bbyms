@@ -27,5 +27,15 @@
     "link": "/duo",
     "description": "A duotone palette inspired by spotify's branding",
     "alt": "Spotify image of Calvin Harris"
+  },
+
+  "post-four": {
+    "slug": "days",
+    "title": "Your age in days",
+    "image": "img/days.png",
+    "colors": [ [220, 181, 206], [34, 56, 183] ],
+    "link": "/days",
+    "description": "A simple script to calculate your age in days",
+    "alt": "My age in days"
   }
 }
