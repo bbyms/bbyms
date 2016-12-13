@@ -1,3 +1,9 @@
+$cadetblue: #5f9ea0;
+$blueviolet: #8a2be2;
+$cornflowerbluwe: #6495ed;
+$dodgerblue: #1e90ff;
+$grey: #808080;
+
 @mixin flex-center {
   align-items: center;
   display: flex;
@@ -10,5 +16,12 @@
 
   &-title {
     height: 80vh;
+  }
+
+  &-mood {
+    @extend %type--serif;
+    color: $cadetblue;
+    font-size: 1.4em;
+    width: 50%;
   }
 }
