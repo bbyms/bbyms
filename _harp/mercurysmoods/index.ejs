@@ -4,18 +4,16 @@
 </div>
 
 <div class="mercury mercury-tint" id="post">
-  <form class="mercury-form" action="index.html" method="post" enctype='application/json'>
+  <form class="mercury-form">
     <label for="mood">In the mood for:</label>
-    <textarea name="description" rows="6" cols="40"></textarea>
-    <button type="button" name="button" type="submit">Send</button>
+    <textarea name="description" rows="6" cols="40" id="quoteValue"></textarea>
+    <button type="button" name="button" onclick="writeUserData()">Send</button>
   </form>
   <a href="#mood" class="down"><img src="/img/down.svg" alt="Scroll down" /></a>
 </div>
 
-<% var n = 0;
-for(var key in public.mercurysmoods._data){
-  n++ %>
-  <div class="mercury" id="mood">
-    <p class="mercury-mood"><%= public.mercurysmoods._data[key].description %></p>
-  </div>
-<% } %>
+
+
+<div class="mercury" id="mood">
+  <p class="mercury-mood" id="getQuote"></p>
+</div>
