@@ -1,8 +1,8 @@
-<div style="padding: 40px;">
+<div class="grid">
   <% var n = 0;
   for(var key in public.duo._data){
     n++ %>
-    <div class="snippet" style="display:inline-block;">
+    <div class="snippet">
       <svg width="320" height="320" viewBox="0 0 600 600">
         <defs>
           <filter id=<%= "duotone-filter-" +public.duo._data[key].slug %> color-interpolation-filters="sRGB"

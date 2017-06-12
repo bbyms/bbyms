@@ -61,29 +61,19 @@ svg {
   }
 }
 
-.home-container {
-  padding: 0 40px;
-
-  @include desktop {
-    display: flex;
-  }
-
-  @include tablet {
-    display: flex;
-  }
+.home-container,
+.grid {
+  display: grid;
+  grid-column-gap: 5%;
+  grid-template-columns: repeat(3, 320px);
+  padding: 40px;
 }
 
 .snippet {
-  width: 100%;
-
-  @include desktop {
-    margin: 0 50px 50px 0;
-    width: 300px;
-  }
 
   svg {
     fill: $primary;
-    margin: 30px 0;
+    margin-bottom: 30px;
   }
 
   .title {

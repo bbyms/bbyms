@@ -1,6 +1,10 @@
 .header-container {
   background: $lightgrey;
   padding: 2em;
+
+  #logo {
+    fill: $grey;
+  }
 }
 
 .header-title {
@@ -11,6 +15,14 @@
   font-weight: 700;
   line-height: 2.5rem;
   margin-right: 20px;
+
+  &:hover {
+    color: $accent;
+
+    #logo {
+      fill: $accent;
+    }
+  }
 }
 
 .global-nav {
