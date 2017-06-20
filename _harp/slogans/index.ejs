@@ -1,11 +1,21 @@
+<div style="padding: 50px 100px; text-align: center;">
+  <h1>A vacuidade dos slogans</h1>
+  <p>
+    Projecto da disciplina de <a href="https://sigarra.up.pt/fbaup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=386038">Narrativas da Imagem</a> do Mestrado em Design da Imagem da Faculdade de Belas Artes da Universidade do Porto,<br> com o intuito de parodiar os chavões das campanhas em Portugal.
+    <br>
+    (Trabalho em progresso)
+  </p>
+</div>
+
+
 <div class="button-grid">
 
   <% var n = 0;
     for(var key in public.slogans._data){
     n++ %>
     <div class="snippet">
-      <button class="btn" onclick="play()"><%= public.slogans._data[key].word %></button>
-      <audio id="audio" src="/audio/confianca.wav" ></audio>
+      <button class="btn" onclick="play('<%= public.slogans._data[key].sound %>')"><%= public.slogans._data[key].word %></button>
+      <audio id="<%= public.slogans._data[key].sound %>" src="/audio/<%= public.slogans._data[key].sound %>.wav" ></audio>
       <!-- <a href="/slogans/<%= key %>.html" class="red"><%= public.slogans._data[key].link %></a> -->
     </div>
   <% } %>
@@ -13,8 +23,10 @@
 </div>
 
 <script type="text/javascript">
-  function play() {
-    var audio = document.getElementById("audio");
+
+  function play(name) {
+    var audio = document.getElementById(name);
     audio.play();
+    console.log(name);
   }
 </script>

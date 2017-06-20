@@ -42,7 +42,7 @@
   "post-five": {
     "slug": "slogan",
     "title": "Slogans on demand",
-    "image": "img/days.png",
+    "image": "img/futuro.png",
     "colors": [ [220, 181, 206], [34, 56, 183] ],
     "link": "/slogans",
     "description": "Hit the button",
