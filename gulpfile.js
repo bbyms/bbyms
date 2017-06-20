@@ -1,6 +1,8 @@
 var gulp        = require('gulp'),
     browserSync = require('browser-sync'),
     reload      = browserSync.reload,
+    sass        = require('gulp-sass'),
+    cssnano     = require('gulp-cssnano'),
     harp        = require('harp');
 
 gulp.task('harp-server', function () {
@@ -13,7 +15,7 @@ gulp.task('harp-server', function () {
         });
 
         gulp.watch("_harp/css/**/*.scss", function () {
-            reload(["main.css", "palette.css"], {stream: true});
+          reload(["main.css", "palette.css"], {stream: true});
         });
 
         gulp.watch([
@@ -26,6 +28,13 @@ gulp.task('harp-server', function () {
             reload();
         });
     })
+});
+
+gulp.task('sass', function() {
+  return gulp.src('_harp/css/**/*.scss')
+    .pipe(sass())
+    .pipe(cssnano())
+    .pipe(gulp.dest('www/css'));
 });
 
 gulp.task('default', ['harp-server']);

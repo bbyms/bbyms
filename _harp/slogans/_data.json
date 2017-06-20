@@ -1,18 +1,22 @@
 {
-  "coragem" : {
-    "word": "coragem",
-    "sound": "/slogans"
+  "justica" : {
+    "word": "justiça",
+    "sound": "justica"
   },
   "mudanca" : {
     "word": "mudança",
-    "sound": "/slogans"
+    "sound": "mudanca"
   },
   "futuro" : {
     "word": "futuro",
-    "sound": "/slogans"
+    "sound": "futuro"
   },
   "confianca" : {
     "word": "confiança",
-    "sound": "/slogans"
+    "sound": "confianca"
+  },
+  "coragem" : {
+    "word": "coragem",
+    "sound": "coragem"
   }
 }
