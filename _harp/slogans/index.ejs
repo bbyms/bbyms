@@ -15,10 +15,13 @@
     n++ %>
     <div class="snippet">
       <button class="btn" onclick="play('<%= public.slogans._data[key].sound %>')"><%= public.slogans._data[key].word %></button>
-      <audio id="<%= public.slogans._data[key].sound %>" src="/audio/<%= public.slogans._data[key].sound %>.wav" ></audio>
-      <!-- <a href="/slogans/<%= key %>.html" class="red"><%= public.slogans._data[key].link %></a> -->
+      <audio id="<%= public.slogans._data[key].sound %>" src="/audio/<%= public.slogans._data[key].sound %>.wav" class="audio" ></audio>
     </div>
   <% } %>
+
+  <div class="snippet">
+    <button class="btn" onclick="playAll()">Frase</button>
+  </div>
 
 </div>
 
@@ -27,6 +30,10 @@
   function play(name) {
     var audio = document.getElementById(name);
     audio.play();
-    console.log(name);
+  }
+
+  function playAll() {
+    var audio = document.getElementByClassName('audio');
+    audio.play();
   }
 </script>
