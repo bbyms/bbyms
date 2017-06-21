@@ -1,16 +1,4 @@
 {
-  "justica" : {
-    "word": "justiça",
-    "sound": "justica"
-  },
-  "mudanca" : {
-    "word": "mudança",
-    "sound": "mudanca"
-  },
-  "futuro" : {
-    "word": "futuro",
-    "sound": "futuro"
-  },
   "confianca" : {
     "word": "confiança",
     "sound": "confianca"
@@ -18,5 +6,37 @@
   "coragem" : {
     "word": "coragem",
     "sound": "coragem"
+  },
+  "estabilidade" : {
+    "word": "estabilidade",
+    "sound": "estabilidade"
+  },
+  "futuro" : {
+    "word": "futuro",
+    "sound": "futuro"
+  },
+  "justica" : {
+    "word": "justiça",
+    "sound": "justica"
+  },
+  "lutar" : {
+    "word": "lutar",
+    "sound": "lutar"
+  },
+  "seriedade" : {
+    "word": "seriedade",
+    "sound": "seriedade"
+  },
+  "solidariedade" : {
+    "word": "solidariedade",
+    "sound": "solidariedade"
+  },
+  "trabalho" : {
+    "word": "trabalho",
+    "sound": "trabalho"
+  },
+  "verdade" : {
+    "word": "verdade",
+    "sound": "verdade"
   }
 }
