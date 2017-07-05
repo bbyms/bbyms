@@ -3,7 +3,7 @@
   <p>
     Projecto da disciplina de <a href="https://sigarra.up.pt/fbaup/pt/ucurr_geral.ficha_uc_view?pv_ocorrencia_id=386038">Narrativas da Imagem</a> do Mestrado em Design da Imagem da Faculdade de Belas Artes da Universidade do Porto,<br> com o intuito de parodiar os chavões das campanhas em Portugal.
     <br>
-    (Trabalho em progresso)
+    (Montra em execução)
   </p>
 </div>
 
@@ -19,8 +19,8 @@
     </div>
   <% } %>
 
-  <div class="snippet">
-    <button class="btn" onclick="playAll()">Frase</button>
+  <div class="snippet snippet-center">
+    <button class="btn btn-lg" onclick="playAll()">Chavão aleatório</button>
   </div>
 
 </div>
@@ -33,7 +33,24 @@
   }
 
   function playAll() {
-    var audio = document.getElementByClassName('audio');
-    audio.play();
+    var audio = document.getElementsByClassName('audio');
+
+    var a = Math.floor((Math.random() * 9) + 1);
+    var b = Math.floor((Math.random() * 9) + 1);
+    var c = Math.floor((Math.random() * 9) + 1);
+
+    var all = new Array(audio[a], audio[b], audio[c]);
+
+    console.log(a, b, c);
+
+    var i = -1;
+    playSnd();
+
+    function playSnd() {
+        i++;
+        if (i == all.length) return;
+        all[i].addEventListener('ended', playSnd);
+        all[i].play();
+    }
   }
 </script>
