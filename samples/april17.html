@@ -1,0 +1,142 @@
+<html>
+  <meta charset="utf-8" />
+  <head>
+    <title>Barbara Mendes</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="Front-End, Front End, Development, Web">
+<meta name="description" content="Barbara Mendes website">
+<meta name="author" content="Barbara Mendes">
+
+<meta name="theme-color" content="#30499b">
+
+<link rel="manifest" href="/manifest.json">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="icon" sizes="16x16" href="/favicon/favicon.png">
+
+<link href="/icon-512.png" rel="apple-touch-icon" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+<!-- Typekit Fonts -->
+
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'rmk3ply',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+
+<!-- Google Analytics -->
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-76424808-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  </head>
+  <body>
+    <div class="back">
+  <a href="/magazine"><i class="material-icons">arrow_back</i></a>
+</div>
+
+    <main class="april17">
+      <h2>And such was their hunger for land that they took the land--stole Sutter’s land</h2>
+      <h1>Guerrero’s land</h1>
+      <div class="april17-container">
+        <div class="shape"></div>
+        <p class="april17-pone">and its land to Mexicans; and a horde of tattered feverish Americans poured in.  And such was their hunger for land that they took the land--stole Sutter’s land, Guerrero’s land, took the grants and broke them up and growled and quarreled over them, those frantic hungry men; and they guarded with guns the land they had stolen. They put up housed and barns, they turned the earth and planted crops. And these things were possession, and possession was ownership. The Mexicans were weak and fled.  They could not resist, because they wanted nothing in the world as frantically as the Americans wanted land.
+        </p>
+        <p class="april17-ptwo"> Then, with time, the squatters were no longer squatters, but owners; and their children grew up and had children on the land.  And the hunger was gone from them, the feral hunger, the gnawing, tearing hunger for land, for water and earth and the good sky over it, for the green thrusting grass, for the swelling roots. Now farming became industry, and the owners followed Rome, although they did not know it.  They imported slaves, although they did not call them slaves: Chinese, Japanese, Mexicans, Filipinos.  They ice on rice and beans, the business men said.  They don’t need much.  They couldn’t know what to do with good wages.  Why, look how they live.  Why, look what they eat.  And if they get funny--deport them.</p>
+      </div>
+      <p class="words">
+        <span class="dim">Words</span>
+        John Steinbeck
+      </p>
+
+    </main>
+    <footer>
+  <a href="http://twitter.com/bbyms" target="_blank" title="follow me on twitter" class="twitter"><i class="fa fa-twitter"></i></a>
+  <script src="/js/jquery.min.js"></script>
+  <script src="/js/scripts.js"></script>
+
+  <script type="text/javascript">
+    var MS_PER_DAY = 1000 * 60 * 60 * 24;
+
+    $(document).ready(function(){
+      $('.days-form-submit').click(
+        function() {
+          var a = new Date($('#dob').val());
+          var birth = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+          var now = Date.now();
+          $('#res').text('You are ' + Math.floor((now - birth) / MS_PER_DAY) + ' days old');
+        }
+      );
+
+    });
+
+  </script>
+
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
+  <script type="text/javascript">
+  var config = {
+    apiKey: "AIzaSyCJWQmoCD_vMRFTjyvoT_e2wJWa-EqoezA",
+    authDomain: "mercurys-moods.firebaseapp.com",
+    databaseURL: "https://mercurys-moods.firebaseio.com",
+    storageBucket: "mercurys-moods.appspot.com",
+    messagingSenderId: "1046928800005"
+  };
+
+  firebase.initializeApp(config);
+
+  let rootRef = firebase.database().ref('quotes');
+  let updatingDatabase = false;
+  let readingFromDatabase = false;
+  let database = {};
+  let quotes = [];
+
+  updateDatabaseRealtime();
+
+  function updateDatabaseRealtime() {
+      rootRef.on('value', function (snapshot) {
+          console.log("Update to firebase detected. Trying to update bot database.");
+          while (readingFromDatabase) { }
+          updatingDatabase = true;
+          database = snapshot.val();
+          updatingDatabase = false;
+          console.log("Database updated.");
+
+          let teste = database['quotes'];
+          console.log("quotes " + database);
+
+          $('#getQuote').text(database);
+      });
+  }
+
+  function writeUserData() {
+    var message = $('#quoteValue').val();
+
+    console.log(message);
+    rootRef.set({
+      0: message
+    });
+  }
+  </script>
+</footer>
+
+</body>
+</html>
