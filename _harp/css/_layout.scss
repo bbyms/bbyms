@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background: $primary;
+  background: $white;
   margin: 0;
   padding: 0;
 }
@@ -51,22 +51,21 @@ svg {
 }
 
 .home {
-  .header-container {
-    background: $primary;
-    padding: 2em;
-  }
-
   .header-title,
   p {
     color: $white;
+  }
+
+  main {
+    background-color: $primary;
   }
 }
 
 .home-container,
 .grid {
   display: grid;
-  grid-column-gap: 100px;
-  grid-row-gap: 100px;
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
   padding: 40px;
 
   @include tablet {
@@ -74,7 +73,7 @@ svg {
   }
 
   @include desktop {
-    grid-template-columns: repeat(4, auto);
+    grid-template-columns: repeat(2, auto);
   }
 
   @include large {
@@ -83,7 +82,7 @@ svg {
 }
 
 .snippet {
-  margin: 100px;
+  margin: 0 50px;
 
   svg {
     fill: $primary;
@@ -94,8 +93,8 @@ svg {
     border-bottom: 5px solid $lightgrey;
     color: $white;
     display: block;
-    font-size: 2rem;
-    font-weight: 300;
+    font-size: 4rem;
+    font-weight: 700;
     margin-bottom: 20px;
     padding-bottom: 15px;
 
@@ -105,8 +104,10 @@ svg {
   }
 
   p {
-    @extend %type--serif;
+    @extend %type--sans;
     color: $white;
+    font-size: 1.2rem;
+    line-height: 1.5;
   }
 }
 

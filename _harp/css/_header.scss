@@ -1,27 +1,48 @@
 .header-container {
-  background: $lightgrey;
-  padding: 2em;
-
-  #logo {
-    fill: $grey;
-  }
+  background: $primary;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 20vh;
+  padding: 0 2rem;
 }
 
 .header-title {
   align-items: center;
-  color: $black;
+  color: $white;
   display: flex;
   font-size: 1.2rem;
   font-weight: 700;
   line-height: 2.5rem;
-  margin-right: 20px;
 
   &:hover {
-    color: $accent;
+    color: $white;
 
     #logo {
-      fill: $accent;
+      fill: $white;
     }
+  }
+}
+
+.social-media {
+  align-items: center;
+  display: flex;
+  justify-content: flex-end;
+
+  a {
+    color: $white;
+    display: inline-block;
+    font-weight: 700;
+    margin-left: 10px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &-divider {
+    color: $white;
+    display: inline-block;
+    margin-left: 10px;
   }
 }
 

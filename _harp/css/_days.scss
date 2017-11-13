@@ -8,7 +8,7 @@
 .days {
   @include flex-center;
   background-color: $accent;
-  min-height: 100vh;
+  min-height: 80vh;
 
   h1 {
     color: $white;

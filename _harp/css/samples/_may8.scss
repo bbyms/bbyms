@@ -1,8 +1,7 @@
 .may8 {
-  // .post-header {
-  //   background-image: filter(url(data:image/jpeg;base64,/9j/4AAQ ...[truncated] ...), blur(20px));
-  // }
+
   header {
+    background-attachment: fixed;
     background-color: #57434c;
     background-image: url('../img/skater.jpeg');
     background-size: cover;
@@ -43,13 +42,13 @@
   }
 
   main {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     height: 100vh;
 
     .title {
       @extend %type--condensed;
       align-self: flex-end;
-      flex-basis: 70%;
       font-size: 13rem;
       font-weight: 700;
       line-height: .8;
@@ -64,8 +63,13 @@
 
     p {
       @extend %type--serif;
-      flex-basis: 20rem;
       line-height: 1.5;
+      margin-bottom: 0;
+      margin-top: 100px;
     }
+  }
+
+  footer {
+    padding: 0;
   }
 }

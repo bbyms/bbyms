@@ -1,13 +1,24 @@
 .error-page {
+  align-items: center;
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+
   h1 {
-    color: $primary;
+    color: $white;
     font-size: 3rem;
     margin-bottom: 30px;
     text-align: center;
   }
 
   p {
-    color: $grey;
+    color: $white;
     text-align: center;
+  }
+
+  a {
+    color: $white;
+    font-weight: 700;
+    text-decoration: underline;
   }
 }
