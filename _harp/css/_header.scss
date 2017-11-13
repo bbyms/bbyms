@@ -40,3 +40,12 @@
   margin-right: 20px;
   width: 64px;
 }
+
+.slogan-title {
+  padding: 30px;
+  text-align: center;
+
+  @media (min-width: 576px) {
+    padding: 50px 100px;
+  }
+}
