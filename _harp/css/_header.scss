@@ -3,10 +3,11 @@
   display: grid;
   grid-template-columns: 1fr;
   height: 20vh;
-  padding: 0 90px;
+  padding: 0 20px;
 
   @include tablet-up {
     grid-template-columns: 1fr 1fr;
+    padding: 0 90px;
   }
 }
 
