@@ -69,7 +69,7 @@ svg {
   padding: 40px;
 
   @include tablet {
-    grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(1, auto);
   }
 
   @include desktop {
@@ -82,7 +82,10 @@ svg {
 }
 
 .snippet {
-  margin: 0 50px;
+
+  @include tablet-up {
+    margin: 0 50px;
+  }
 
   svg {
     fill: $primary;

@@ -1,9 +1,13 @@
 .header-container {
   background: $primary;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   height: 20vh;
-  padding: 0 2rem;
+  padding: 0 90px;
+
+  @include tablet-up {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .header-title {
@@ -24,9 +28,12 @@
 }
 
 .social-media {
-  align-items: center;
-  display: flex;
-  justify-content: flex-end;
+
+  @include tablet-up {
+    align-items: center;
+    display: flex;
+    justify-content: flex-end;
+  }
 
   a {
     color: $white;
