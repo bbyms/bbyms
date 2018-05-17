@@ -1,6 +1,6 @@
 .home {
   .header-container {
-    background: $accent;
+    background: var(--background);
 
     #logo {
       fill: $white;
@@ -8,7 +8,7 @@
   }
 
   .header-title {
-    color: $white;
+    color: var(--foreground);
 
     &:hover {
       opacity: .7;
@@ -17,5 +17,14 @@
         opacity: .7;
       }
     }
+  }
+
+  .header-title,
+  p {
+    color: var(--foreground);
+  }
+
+  main {
+    background-color: var(--background);
   }
 }

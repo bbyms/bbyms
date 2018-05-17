@@ -50,17 +50,6 @@ svg {
   width: 0;
 }
 
-.home {
-  .header-title,
-  p {
-    color: $white;
-  }
-
-  main {
-    background-color: $primary;
-  }
-}
-
 .home-container,
 .grid {
   display: grid;
@@ -102,7 +91,7 @@ svg {
     padding-bottom: 15px;
 
     &:hover {
-      border-bottom: 5px solid lighten($primary, 20%);
+      border-bottom: 5px solid var(--hover);
     }
   }
 
